@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>IT Training registration</title>
+    </head>
+    <body>
+        <h2 align="center">IT Training Classes - Sign Up</h2>
+        <table align="center"border="2" callpadding="0">
+            <tr>
+                <td>
+                    <form>
+                        <lable>Full Name:</lable><br>
+                        <input type="text"name="fullname"required><br><br>
+                        <lable>Email Addres:</lable><br>
+                        <input type="Email"name="email"required><br><br>
+                        <lable>Password</lable><br>
+                        <input type="password" id="password"name="password"required><br>
+                        <input type="checkbox"oneclick="togglePassword()">show password<br><br>
+                        <script>
+                            function togglePassword(){
+                                var x =
+                                document .getElementById("password");
+                                if(x.type ==="password"){
+                                    x.type="text";
+                                }else{x.type="password"}
+                            }
+                        </script>
+                        <lable>Gender</lable><br>
+                        <input type="radio"name="Gender">Male
+                        <input type="radio"name="Gender">Female<br><br>
+                        <lable>Select Course</lable><br>
+                        <select name="course">
+                            <option>Web-Development</option>
+                            <option>Graphics-Designing</option>
+                            <option>Digital-Marketing</option>
+                            <option>Pythone-Programming</option>
+                        </select><br><br>
+                        <lable>Phone</lable><br>
+                        <textarea name="address"></textarea><br><br>
+                        <input type="submit"value="Register">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <a href="main.html">Back To Home</a>
+    </body>
+</html>
